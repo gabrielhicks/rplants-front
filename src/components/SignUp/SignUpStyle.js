@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const SignUpWrapper = styled.div`
     position: fixed;
@@ -7,12 +7,12 @@ const SignUpWrapper = styled.div`
     height: 100vh;
     width: 100vw;
     z-index: 0;
-    background-image: url("https://i.ibb.co/HPZSSSB/Card-40.webp");
+    background-image: url('https://i.ibb.co/HPZSSSB/Card-40.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-`
+`;
 
 const SignUpForm = styled.form`
     p {
@@ -20,7 +20,7 @@ const SignUpForm = styled.form`
         padding-bottom: 20px;
         color: rgba(57, 54, 38, 1);
     }
-    box-shadow: 8px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.5);
     display: flex;
     position: absolute;
     top: 40%;
@@ -32,7 +32,7 @@ const SignUpForm = styled.form`
     height: 25rem;
     width: 25rem;
     border-radius: 25px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     @media screen and (max-width: 900px) {
         height: 16rem;
         width: 16rem;
@@ -42,10 +42,10 @@ const SignUpForm = styled.form`
             margin-bottom: 0;
         }
     }
-`
+`;
 
 const SignUpButton = styled.button`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     background: rgba(147, 141, 123, 1);
     width: 70%;
@@ -66,16 +66,16 @@ const SignUpButton = styled.button`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     @media screen and (max-width: 900px) {
         width: 162px;
         height: 40px;
         margin: 4%;
     }
-`
+`;
 
 const UserInput = styled.input`
     outline: none;
@@ -89,6 +89,6 @@ const UserInput = styled.input`
         width: 60%;
         padding: 2%;
     }
-`
+`;
 
-export {SignUpForm, SignUpButton, UserInput, SignUpWrapper }
+export { SignUpForm, SignUpButton, UserInput, SignUpWrapper };

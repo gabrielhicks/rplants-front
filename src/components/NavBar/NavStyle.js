@@ -4,7 +4,7 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     background-color: rgba(149, 176, 113, 0.7);
     height: 40px;
     display: flex;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     padding-right: 150px;
     z-index: 10;
     position: sticky;
-`
+`;
 
 export const NavLogo = styled(Link)`
     img {
@@ -34,7 +34,7 @@ export const NavLogo = styled(Link)`
         top: 0;
         left: 0;
     }
-`
+`;
 
 export const NavLink = styled(Link)`
     color: #fff;
@@ -52,7 +52,7 @@ export const NavLink = styled(Link)`
     }
     &:hover {
         b.cart {
-        color: red;
+            color: red;
         }
         background-color: rgba(100, 114, 97, 1);
         border-radius: 4px;
@@ -60,7 +60,7 @@ export const NavLink = styled(Link)`
     }
     @media screen and (max-width: 768px) {
         b.cart {
-        color: red;
+            color: red;
         }
         text-align: center;
         padding: 1.5rem;
@@ -69,18 +69,18 @@ export const NavLink = styled(Link)`
 
         &:hover {
             b.cart {
-        color: red;
-        }
+                color: red;
+            }
             background: rgba(181, 181, 161, 1);
             border-radius: 0;
         }
     }
-`
+`;
 
 export const NavLinkMobile = styled(Link)`
     display: none;
     @media screen and (max-width: 768px) {
-        box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+        box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
         display: block;
         text-align: center;
         padding: 1.2rem;
@@ -93,9 +93,9 @@ export const NavLinkMobile = styled(Link)`
         font-size: 1.2rem;
         &:active {
             letter-spacing: 0.5px;
-            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-            box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
         }
         &:hover {
             background: rgba(181, 181, 161, 1);
@@ -103,7 +103,7 @@ export const NavLinkMobile = styled(Link)`
             transition: 250ms;
         }
     }
-`
+`;
 
 export const MenuIcon = styled.div`
     display: none;
@@ -116,7 +116,7 @@ export const MenuIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
     }
-`
+`;
 
 export const Bars = styled(FaBars)`
     display: none;
@@ -130,7 +130,7 @@ export const Bars = styled(FaBars)`
         font-size: 1.4rem;
         cursor: pointer;
     }
-`
+`;
 
 export const Times = styled(FaTimes)`
     @media screen and (max-width: 768px) {
@@ -142,7 +142,7 @@ export const Times = styled(FaTimes)`
         color: rgba(57, 54, 38, 1);
         font-size: 1.4rem;
     }
-`
+`;
 
 export const NavMenu = styled.div`
     display: grid;
@@ -173,7 +173,7 @@ export const NavMenu = styled.div`
             z-index: 1;
         }
     }
-`
+`;
 
 export const NavItem = styled.li`
     b.cart {
@@ -184,14 +184,14 @@ export const NavItem = styled.li`
     height: 40px;
     @media screen and (max-width: 768px) {
         b.cart {
-        color: red;
+            color: red;
         }
         height: 60px;
     }
-`
+`;
 
 export const NavBtn = styled.nav`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     position: absolute;
@@ -199,7 +199,7 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
+`;
 
 export const NavBtnLink = styled(Link)`
     border-radius: 4px;
@@ -219,11 +219,11 @@ export const NavBtnLink = styled(Link)`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
-`
+`;
 
 // export const DropdownWrapper = styled.ul`
 //     li {

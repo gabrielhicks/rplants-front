@@ -20,16 +20,17 @@
 
 👤 **Gabriel Hicks and Jessica Salbert**
 
-* Github: [@jessicasalbert](https://github.com/jessicasalbert)
-* Github: [@gabrielhicks](https://github.com/gabrielhicks)
+-   Github: [@jessicasalbert](https://github.com/jessicasalbert)
+-   Github: [@gabrielhicks](https://github.com/gabrielhicks)
 
 ## To Do
-- [x] Browser responsiveness
-- [ ] Create unit tests
-- [x] Fix mobile responsiveness
-- [ ] Refactor components to functional when needed
-- [ ] Implement and optimize with Redux
-- [ ] Add inventory
+
+-   [x] Browser responsiveness
+-   [ ] Create unit tests
+-   [x] Fix mobile responsiveness
+-   [ ] Refactor components to functional when needed
+-   [ ] Implement and optimize with Redux
+-   [ ] Add inventory
 
 ## 🤝 Contributing
 
@@ -44,5 +45,4 @@ Give a ⭐️ if this project helped you!
 Copyright © 2020 [Gabriel Hicks and Jessica Salbert](https://github.com/jessicasalbert).<br />
 This project is [MIT](https://github.com/jessicasalbert/rplants-front/blob/master/LICENSE) licensed.
 
-***
-
+---

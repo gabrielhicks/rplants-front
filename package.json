@@ -1,61 +1,61 @@
 {
-  "name": "rplants",
-  "version": "0.1.0",
-  "description": "A ReactJS / Ruby on Rails e-commerce web application",
-  "author": "Gabriel Hicks and Jessica Salbert",
-  "license": "MIT",
-  "homepage": "http://rplants-frontend.herokuapp.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jessicasalbert/rplants-front"
-  },
-  "bugs": {
-    "url": "https://github.com/jessicasalbert/rplants-front/issues"
-  },
-  "private": true,
-  "dependencies": {
-    "@meronex/icons": "^4.0.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/user-event": "^12.1.10",
-    "geojson": "^0.5.0",
-    "geojson-world-map": "^0.0.2",
-    "leaflet": "^1.7.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-leaflet": "^3.0.1",
-    "react-paypal-button-v2": "^2.6.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@testing-library/react": "^11.1.1",
-    "react-test-renderer": "^17.0.1"
-  }
+    "name": "rplants",
+    "version": "0.1.0",
+    "description": "A ReactJS / Ruby on Rails e-commerce web application",
+    "author": "Gabriel Hicks and Jessica Salbert",
+    "license": "MIT",
+    "homepage": "http://rplants-frontend.herokuapp.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jessicasalbert/rplants-front"
+    },
+    "bugs": {
+        "url": "https://github.com/jessicasalbert/rplants-front/issues"
+    },
+    "private": true,
+    "dependencies": {
+        "@meronex/icons": "^4.0.0",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/user-event": "^12.1.10",
+        "geojson": "^0.5.0",
+        "geojson-world-map": "^0.0.2",
+        "leaflet": "^1.7.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-leaflet": "^3.0.1",
+        "react-paypal-button-v2": "^2.6.2",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.0",
+        "styled-components": "^5.2.1",
+        "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@testing-library/react": "^11.1.1",
+        "react-test-renderer": "^17.0.1"
+    }
 }

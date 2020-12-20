@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FormStyle = styled.form`
     display: block;
     margin-left: 10vw;
-    padding: 30px; 
+    padding: 30px;
     input.text {
         width: 500px;
         height: 50px;
@@ -11,7 +11,6 @@ const FormStyle = styled.form`
     input {
         width: 350px;
     }
+`;
 
-`
-
-export default FormStyle
+export default FormStyle;

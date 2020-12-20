@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Background = styled.div`
     position: relative;
@@ -7,17 +7,17 @@ const Background = styled.div`
     min-height: 100%;
     width: 100vw;
     z-index: 0;
-    background-image: url("https://i.ibb.co/K0Ww3rX/Final-40.webp");
+    background-image: url('https://i.ibb.co/K0Ww3rX/Final-40.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100vw;
     @media screen and (max-width: 1024px) {
-        background-image: url("https://i.ibb.co/VH4pFYg/background40.webp");
+        background-image: url('https://i.ibb.co/VH4pFYg/background40.webp');
         background-repeat: repeat;
     }
-`
+`;
 
 const Page = styled.section`
     padding-top: 50px;
@@ -28,11 +28,10 @@ const Page = styled.section`
     max-width: 70vw;
     min-height: 100vh;
     align-items: center;
-`
-
+`;
 
 const AddtoCart = styled.button`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
@@ -50,19 +49,19 @@ const AddtoCart = styled.button`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     @media (max-width: 1023px) {
         padding: 10px;
         margin-left: 0;
     }
-`
+`;
 const SelectedLabel = styled.label`
     color: rgba(57, 54, 38, 1);
     display: inline-block;
-    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,.5);
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
     background-color: rgb(149, 176, 113, 0.75);
     padding: 5px 10px;
     font-size: 16px;
@@ -75,11 +74,11 @@ const SelectedLabel = styled.label`
     @media (max-width: 412px) {
         padding: 3px;
     }
-`
+`;
 
 const UnselectedLabel = styled.label`
     color: rgba(57, 54, 38, 1);
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -97,7 +96,7 @@ const UnselectedLabel = styled.label`
         padding: 3px;
         ${'' /* margin: 0; */}
     }
-`
+`;
 
 // color:rgba(57, 54, 38, 1); - dark yellow/brown
 //     color:rgb(149, 176, 113, 1); - lighter green (nav)
@@ -107,15 +106,12 @@ const UnselectedLabel = styled.label`
 //     color:rgba(239, 234, 225, 1); -  whiteish
 //     color: rgb(248, 148, 25, 1); - orange
 
-
-
 const Details = styled.section`
-
     .quantity {
-        color: rgba(100, 114, 97, 1)
+        color: rgba(100, 114, 97, 1);
     }
 
-    input[type="radio"] {
+    input[type='radio'] {
         opacity: 0;
         position: fixed;
         width: 0;
@@ -132,7 +128,7 @@ const Details = styled.section`
         max-width: 50vw;
         height: auto;
     }
-`
+`;
 
 const TopDetails = styled.section`
     width: 100%;
@@ -149,8 +145,7 @@ const TopDetails = styled.section`
         flex-direction: column;
         align-content: center;
     }
-
-`
+`;
 
 const Photo = styled.img`
     position: relative;
@@ -166,13 +161,15 @@ const Photo = styled.img`
     }
     @media (max-width: 1024px) {
         margin: auto;
-        ${'' /* margin-top: 5vh;
+        ${
+            '' /* margin-top: 5vh;
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 0;
         align-content: center;
         width: 100%;
-        height: auto; */}
+        height: auto; */
+        }
     }
     @media (max-width: 960px) {
         align-content: center;
@@ -184,34 +181,32 @@ const Photo = styled.img`
         max-width: 50vw;
         height: auto;
     }
-
-`
+`;
 
 const CareType = styled.p`
     margin-left: 1vw;
     color: rgba(57, 54, 38, 1);
     font-size: 1.5rem;
-`
+`;
 
 const Price = styled.p`
     margin-left: 1vw;
     color: rgba(57, 54, 38, 1);
     font-size: 1.5rem;
     @media (max-width: 960px) {
-    margin-top: 0;
+        margin-top: 0;
     }
     @media (max-width: 812px) {
-
     }
-`
+`;
 
 const Description = styled.p`
     color: rgba(57, 54, 38, 1);
     padding: 2%;
-`
+`;
 const BottomDetails = styled.section`
     padding: 10px;
-`
+`;
 
 const PlantHeading = styled.h1`
     color: rgba(57, 54, 38, 1);
@@ -228,7 +223,7 @@ const PlantHeading = styled.h1`
     @media (max-width: 812px) {
         font-size: 2em;
     }
-`
+`;
 
 const Heading = styled.h1`
     img.before {
@@ -246,7 +241,7 @@ const Heading = styled.h1`
     @media (max-width: 411px) {
         font-size: 1.75em;
     }
-`
+`;
 
 const CareCard = styled.section`
     background-color: rgba(255, 255, 255, 1);
@@ -258,9 +253,9 @@ const CareCard = styled.section`
     max-height: 100%;
 
     &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-`
+`;
 
 const SubHeading = styled.h2`
     font-weight: normal;
@@ -275,7 +270,7 @@ const SubHeading = styled.h2`
     @media (max-width: 812px) {
         font-size: 1.5em;
     }
-`
+`;
 
 const PetFriendly = styled.p`
     color: rgba(57, 54, 38, 1);
@@ -288,22 +283,24 @@ const PetFriendly = styled.p`
     margin-top: 1vh;
     font-size: 1.4rem;
     justify-content: left;
-`
+`;
 
-export {TopDetails, 
-        BottomDetails, 
-        Page, Details, 
-        Photo, 
-        AddtoCart, 
-        CareType, 
-        Description, 
-        Heading, 
-        SubHeading, 
-        PetFriendly,
-        CareCard,
-        Background,
-        PlantHeading,
-        SelectedLabel,
-        UnselectedLabel,
-        Price
-}
+export {
+    TopDetails,
+    BottomDetails,
+    Page,
+    Details,
+    Photo,
+    AddtoCart,
+    CareType,
+    Description,
+    Heading,
+    SubHeading,
+    PetFriendly,
+    CareCard,
+    Background,
+    PlantHeading,
+    SelectedLabel,
+    UnselectedLabel,
+    Price,
+};

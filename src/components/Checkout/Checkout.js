@@ -1,85 +1,83 @@
-import React, { Component } from 'react'
-import CartItem from '../CartItem/CartItem'
-import PayPal from '../PayPal/PayPal'
-import {Total, CheckoutContainer} from './CheckoutStyle'
-import {CartWrapper, CartStyle, Heading } from '../Cart/CartStyle'
+import React, { Component } from 'react';
+import CartItem from '../CartItem/CartItem';
+import PayPal from '../PayPal/PayPal';
+import { Total, CheckoutContainer } from './CheckoutStyle';
+import { CartWrapper, CartStyle, Heading } from '../Cart/CartStyle';
 
 export class Checkout extends Component {
-
     state = {
-        clicked : false,
-        guestUserId: null
-    }
+        clicked: false,
+        guestUserId: null,
+    };
 
     componentDidMount() {
         if (!this.props.user) {
-            this.generateGuest()
+            this.generateGuest();
         }
     }
-
 
     generateGuest = () => {
         const user = {
-            name: "Guest",
-            username: "Guest" + Math.round(Math.random() * 1000000).toString(),
-            email: "Guest",
-            password: "guest"
-        }
+            name: 'Guest',
+            username: 'Guest' + Math.round(Math.random() * 1000000).toString(),
+            email: 'Guest',
+            password: 'guest',
+        };
 
         let options = {
-            method: "POST",
+            method: 'POST',
             headers: {
-                Accept: "application/json",
-                "content-type": "application/json"
+                Accept: 'application/json',
+                'content-type': 'application/json',
             },
-            body: JSON.stringify({user})
-        }
+            body: JSON.stringify({ user }),
+        };
 
-        fetch("https://rplants-backend.herokuapp.com/api/v1/users", options)
-        .then(resp => resp.json())
-        .then(data => {
-            this.setState({ guestUserId: data.user.id })
-            localStorage.setItem("token", data.jwt)
-        })
-        .catch(console.log)
-        
-    }
+        fetch('https://rplants-backend.herokuapp.com/api/v1/users', options)
+            .then((resp) => resp.json())
+            .then((data) => {
+                this.setState({ guestUserId: data.user.id });
+                localStorage.setItem('token', data.jwt);
+            })
+            .catch(console.log);
+    };
 
     purchaseHandler = () => {
-        const orderNumber = Math.round(Math.random() * 1000000).toString()
-        const id = this.props.user? this.props.user.id : this.state.guestUserId
+        const orderNumber = Math.round(Math.random() * 1000000).toString();
+        const id = this.props.user
+            ? this.props.user.id
+            : this.state.guestUserId;
         const body = {
-                    order_number: orderNumber,
-                    user_id: id,
-                    total: this.props.total.toString()
-            }
+            order_number: orderNumber,
+            user_id: id,
+            total: this.props.total.toString(),
+        };
 
         const options = {
-            method: "POST",
+            method: 'POST',
             headers: {
-                "content-type" : "application/json",
-                accepts: "application/json",
-                Authorization: `Bearer ${localStorage.getItem("token")}` 
+                'content-type': 'application/json',
+                accepts: 'application/json',
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
-            body: JSON.stringify(body)
-        }
+            body: JSON.stringify(body),
+        };
         fetch('https://rplants-backend.herokuapp.com/api/v1/orders', options)
-        .then(res => res.json())
-        .then(res => {
-            for (const item of this.props.cart) {
-                this.postPurchases(item, res.id)
-            }
-            localStorage.removeItem("cart")
-            localStorage.removeItem("total")
-            if (this.state.guestUserId) {
-                localStorage.removeItem("token")
-                this.props.clearGuestUser()
-            }
-            
-            this.props.redirectToSuccess(res.order_number)
-        })
-    }
+            .then((res) => res.json())
+            .then((res) => {
+                for (const item of this.props.cart) {
+                    this.postPurchases(item, res.id);
+                }
+                localStorage.removeItem('cart');
+                localStorage.removeItem('total');
+                if (this.state.guestUserId) {
+                    localStorage.removeItem('token');
+                    this.props.clearGuestUser();
+                }
 
+                this.props.redirectToSuccess(res.order_number);
+            });
+    };
 
     postPurchases = (item, order) => {
         const body = {
@@ -87,49 +85,55 @@ export class Checkout extends Component {
             price: item.price[item.size],
             size: item.size,
             quantity: item.quantity,
-            order_id: order
-        }
+            order_id: order,
+        };
         const options = {
-            method: "POST",
+            method: 'POST',
             headers: {
-                "content-type" : "application/json",
-                accepts: "application/json",
-                Authorization: `Bearer ${localStorage.getItem("token")}` 
+                'content-type': 'application/json',
+                accepts: 'application/json',
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
-            body: JSON.stringify(body)
-        }
-        fetch('https://rplants-backend.herokuapp.com/api/v1/purchases', options)
-        .then(res => res.json())
-    }
+            body: JSON.stringify(body),
+        };
+        fetch(
+            'https://rplants-backend.herokuapp.com/api/v1/purchases',
+            options
+        ).then((res) => res.json());
+    };
 
     renderCart = () => {
-        return this.props.cart.map(item => (<CartItem plant={item} key={this.props.cart.indexOf(item)} />))
-    }
+        return this.props.cart.map((item) => (
+            <CartItem plant={item} key={this.props.cart.indexOf(item)} />
+        ));
+    };
 
     clickHandler = () => {
         if (!this.props.user) {
-            this.generateGuest()
+            this.generateGuest();
         }
-        this.setState( (prev) => ({clicked: !prev.clicked}))
-        
-    }
+        this.setState((prev) => ({ clicked: !prev.clicked }));
+    };
 
     render() {
         return (
             <CartWrapper>
-            <Heading>checkout</Heading>
+                <Heading>checkout</Heading>
                 <CartStyle>
                     {this.renderCart()}
                     <CheckoutContainer>
-                    <PayPal amount={this.props.total} purchaseHandler={this.purchaseHandler}/>
-                    <Total>Total: ${this.props.total}</Total>
+                        <PayPal
+                            amount={this.props.total}
+                            purchaseHandler={this.purchaseHandler}
+                        />
+                        <Total>Total: ${this.props.total}</Total>
                     </CheckoutContainer>
                     <h2>PayPal email: me@rplants.com</h2>
                     <h2>PayPal password: abcd1234</h2>
                 </CartStyle>
             </CartWrapper>
-        )
+        );
     }
 }
 
-export default Checkout
+export default Checkout;

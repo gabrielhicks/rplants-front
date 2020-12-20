@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Background = styled.section`
     position: relative;
@@ -7,7 +7,7 @@ export const Background = styled.section`
     height: 100vh;
     width: 100vw;
     z-index: 0;
-    background-image: url("https://i.ibb.co/HPZSSSB/Card-40.webp");
+    background-image: url('https://i.ibb.co/HPZSSSB/Card-40.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@ export const Background = styled.section`
     @media screen and (max-width: 926px) {
         background-size: 150vh;
     }
-`
+`;
 
 export const Card = styled.div`
     h2 {
@@ -24,7 +24,7 @@ export const Card = styled.div`
         font-weight: normal;
         padding-bottom: 20px;
     }
-    box-shadow: 8px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.5);
     display: flex;
     position: absolute;
     top: 37%;
@@ -36,14 +36,14 @@ export const Card = styled.div`
     height: 25rem;
     width: 25rem;
     border-radius: 25px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     @media screen and (max-width: 768px) {
         height: 20rem;
         width: 20rem;
         h2 {
-        font-size: 2rem;
-        font-weight: normal;
-        padding-bottom: 15px;
+            font-size: 2rem;
+            font-weight: normal;
+            padding-bottom: 15px;
         }
     }
-`
+`;

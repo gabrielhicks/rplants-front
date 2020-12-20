@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const CartCard = styled.section`
     margin-left: 5vw;
@@ -10,16 +10,16 @@ const CartCard = styled.section`
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column row;
-`
+`;
 
 const CartImage = styled.img`
     max-width: 100px;
     margin: 0;
-`
+`;
 
 const Delete = styled.button`
     color: rgba(57, 54, 38, 1);
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -33,9 +33,9 @@ const Delete = styled.button`
     max-width: 100px;
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     @media (max-width: 1023px) {
         padding: 10px;
@@ -45,8 +45,7 @@ const Delete = styled.button`
         padding: 3px;
         ${'' /* margin: 0; */}
     }
-
-`
+`;
 
 const CartText = styled.div`
     display: flex;
@@ -60,23 +59,23 @@ const CartText = styled.div`
         display: flex;
         flex-direction: column;
     }
-`
+`;
 
 const Price = styled.p`
     font-size: 1.2rem;
     ${'' /* align-self: flex-end; */}
-`
+`;
 
 const Quantity = styled.p`
     font-size: 1.2rem;
-`
+`;
 
 const Size = styled.p`
     font-size: 1.2rem;
-`
+`;
 
 const Name = styled.p`
     font-size: 1.8rem;
-`
+`;
 
-export {CartCard, Delete, CartImage, CartText, Price, Name, Quantity, Size}
+export { CartCard, Delete, CartImage, CartText, Price, Name, Quantity, Size };

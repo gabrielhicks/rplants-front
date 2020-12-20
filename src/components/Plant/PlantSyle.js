@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const PlantStyle = styled.div`
     background-color: rgba(255, 255, 255, 0.75);
@@ -19,22 +19,22 @@ const PlantStyle = styled.div`
     }
 
     &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-`   
+`;
 const PlantImage = styled.img`
     background: none;
     max-height: 100%;
     max-width: 100%;
     display: block;
 }
-`
+`;
 
 const Title = styled.p`
     color: rgba(57, 54, 38, 1);
     margin-top: 1vh;
     font-size: 1.2rem;
     text-align: center;
-`
+`;
 
-export {PlantImage, PlantStyle, Title}
+export { PlantImage, PlantStyle, Title };

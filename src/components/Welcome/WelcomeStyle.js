@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import L from 'leaflet'
+import styled from 'styled-components';
+import L from 'leaflet';
 
 const WelcomeStyle = styled.div`
-    background-image: url("https://i.ibb.co/VTzcTFd/Final-2.webp");
+    background-image: url('https://i.ibb.co/VTzcTFd/Final-2.webp');
     background-attachment: fixed;
     background-size: contain;
     background-position: top center;
@@ -11,11 +11,11 @@ const WelcomeStyle = styled.div`
     @media screen and (max-width: 700px) {
         background-size: 100vh;
     }
-`
+`;
 
 const StoreButton = styled.button`
     opacity: 0.8;
-    box-shadow: 8px 8px 8px -6px rgba(0,0,0,.3);
+    box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.3);
     background-color: rgba(239, 234, 225, 0.9);
     height: 10vh;
     border-radius: 8px;
@@ -32,9 +32,9 @@ const StoreButton = styled.button`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     @media screen and (max-width: 700px) {
         font-size: 20px;
@@ -59,12 +59,12 @@ const StoreButton = styled.button`
         border-radius: 4px;
         transition: all 0.2s ease-out;
     }
-`
+`;
 
 const BottomWrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.6);
     min-height: 50vh;
-`
+`;
 
 const TopWrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.6);
@@ -111,28 +111,36 @@ const TopWrapper = styled.div`
             padding-bottom: 10px;
         }
     }
-`
+`;
 
 const MapWrapper = styled.div`
     min-height: 50vh;
     ${'' /* background-color: rgba(149, 176, 113, 0.3); */}
     background-color: rgba(100, 114, 97, 0.8);
-`
+`;
 
 const MapStyle = styled.div`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 25vw;
     pointer-events: none;
     @media screen and (max-width: 926px) {
         left: 0;
     }
-`
+`;
 
 const iconPlant = new L.Icon({
     iconUrl: 'https://i.ibb.co/pKKFYpf/redresize.webp',
     iconSize: [39.6, 45],
     // className: 'leaflet-div-icon'
-})
+});
 
-export {WelcomeStyle, TopWrapper, BottomWrapper, MapStyle, iconPlant, MapWrapper, StoreButton}
+export {
+    WelcomeStyle,
+    TopWrapper,
+    BottomWrapper,
+    MapStyle,
+    iconPlant,
+    MapWrapper,
+    StoreButton,
+};

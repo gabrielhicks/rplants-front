@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const PlantContainerStyle = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const PlantContainerStyle = styled.div`
         align-content: center;
     }
 }
-`
+`;
 
 const StoreWrapper = styled.div`
     position: relative;
@@ -29,16 +29,16 @@ const StoreWrapper = styled.div`
     min-height: 100vh;
     width: 100%;
     z-index: 0;
-    background-image: url("https://i.ibb.co/K0Ww3rX/Final-40.webp");
+    background-image: url('https://i.ibb.co/K0Ww3rX/Final-40.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100vw;
     @media screen and (max-width: 1024px) {
-        background-image: url("https://i.ibb.co/VH4pFYg/background40.webp");
+        background-image: url('https://i.ibb.co/VH4pFYg/background40.webp');
         background-repeat: repeat;
     }
-`
+`;
 
-export {PlantContainerStyle, StoreWrapper}
+export { PlantContainerStyle, StoreWrapper };

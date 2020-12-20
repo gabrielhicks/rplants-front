@@ -1,23 +1,27 @@
-import React, { Component } from 'react'
-import SearchStyling from './SearchStyle'
+import React, { Component } from 'react';
+import SearchStyling from './SearchStyle';
 
 export class Search extends Component {
-
     state = {
-        search: ""
-    }
+        search: '',
+    };
 
     localSearchHandler = (e) => {
-        this.props.search(e.target.value)
-    }
+        this.props.search(e.target.value);
+    };
 
     render() {
         return (
             <>
-                <SearchStyling onChange={this.localSearchHandler} placeholder="Search houseplants..." type="text" name="search" value={this.props.searchTerm}></SearchStyling>
+                <SearchStyling
+                    onChange={this.localSearchHandler}
+                    placeholder='Search houseplants...'
+                    type='text'
+                    name='search'
+                    value={this.props.searchTerm}></SearchStyling>
             </>
-        )
+        );
     }
 }
 
-export default Search
+export default Search;

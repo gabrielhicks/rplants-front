@@ -1,18 +1,22 @@
-import React, { Component } from 'react'
-import { PurchaseStyle, PurchaseTable, TableHeading, TableRow } from './PurchasesStyle'
+import React, { Component } from 'react';
+import {
+    PurchaseStyle,
+    PurchaseTable,
+    TableHeading,
+    TableRow,
+} from './PurchasesStyle';
 
 export class Purchases extends Component {
-
-    state={
-        clicked: false
-    }
+    state = {
+        clicked: false,
+    };
 
     localRenderItems = () => {
-        this.setState((prev) => ({ clicked: !prev.clicked}))
-    }
+        this.setState((prev) => ({ clicked: !prev.clicked }));
+    };
 
     mapPurchasesWithHeader = () => {
-        return(
+        return (
             <>
                 <TableRow>
                     <TableHeading>Item</TableHeading>
@@ -22,11 +26,11 @@ export class Purchases extends Component {
                 </TableRow>
                 {this.mapPurchases()}
             </>
-        )
-    }
+        );
+    };
 
     mapPurchases = () => {
-        return this.props.order.purchases.map( purchase => {
+        return this.props.order.purchases.map((purchase) => {
             return (
                 <tr>
                     <td>{purchase.item_name}</td>
@@ -34,20 +38,26 @@ export class Purchases extends Component {
                     <td>{purchase.size}</td>
                     <td>${purchase.price} ea</td>
                 </tr>
-            )
-        })
-    }
+            );
+        });
+    };
     render() {
-        return(
-                <PurchaseStyle onClick={this.localRenderItems}>
-                    <PurchaseTable>
-                    <td>Order #{this.props.order.order_number} &nbsp;-&nbsp;&nbsp;</td>
-                    <td>Total: ${this.props.order.total} &nbsp;-&nbsp;&nbsp;</td>
+        return (
+            <PurchaseStyle onClick={this.localRenderItems}>
+                <PurchaseTable>
+                    <td>
+                        Order #{this.props.order.order_number}{' '}
+                        &nbsp;-&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        Total: ${this.props.order.total} &nbsp;-&nbsp;&nbsp;
+                    </td>
                     <td>{this.props.order.created_at}</td>
-                    </PurchaseTable>
-                    {this.state.clicked ? this.mapPurchasesWithHeader() : null }
-                </PurchaseStyle>
-        )}
+                </PurchaseTable>
+                {this.state.clicked ? this.mapPurchasesWithHeader() : null}
+            </PurchaseStyle>
+        );
+    }
 }
 
-export default Purchases
+export default Purchases;

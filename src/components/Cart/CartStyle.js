@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Heading = styled.h1`
@@ -7,7 +7,7 @@ const Heading = styled.h1`
     opacity: 1;
     margin-left: 13vw;
     margin-bottom: 2vh;
-`
+`;
 
 const TotalButtonWrapper = styled.div`
     max-width: 80vw;
@@ -17,17 +17,17 @@ const TotalButtonWrapper = styled.div`
     @media screen and (max-width: 1020px) {
         max-height: 10vh;
         justify-content: center;
-        }
-        @media screen and (max-width: 720px) {
-            margin-left: 5vw;
-            max-height: 40px;
-        }
-`
+    }
+    @media screen and (max-width: 720px) {
+        margin-left: 5vw;
+        max-height: 40px;
+    }
+`;
 
 const CartWrapper = styled.div`
     color: rgba(57, 54, 38, 1);
     h4 {
-        color:rgba(57, 54, 38, 1);
+        color: rgba(57, 54, 38, 1);
         padding-top: 1vh;
         padding-left: 5vw;
         padding-bottom: 2vh;
@@ -40,30 +40,30 @@ const CartWrapper = styled.div`
     top: 0;
     bottom: 0;
     z-index: 0;
-    background-image: url("https://i.ibb.co/K0Ww3rX/Final-40.webp");
+    background-image: url('https://i.ibb.co/K0Ww3rX/Final-40.webp');
     background-attachment: fixed;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100vw;
     @media screen and (max-width: 1024px) {
-        background-image: url("https://i.ibb.co/VH4pFYg/background40.webp");
+        background-image: url('https://i.ibb.co/VH4pFYg/background40.webp');
         background-repeat: repeat;
     }
-`
+`;
 
 const CartStyle = styled.section`
     min-height: 100vh;
-    color:rgba(57, 54, 38, 1);
-`
+    color: rgba(57, 54, 38, 1);
+`;
 
 const EmptyCart = styled.p`
     font-size: 2rem;
     padding-left: 5vw;
     padding-top: 1vw;
     min-height: 100vh;
-    color:rgba(57, 54, 38, 1);
-`
+    color: rgba(57, 54, 38, 1);
+`;
 
 // const Total = styled.p`
 //     color:rgba(57, 54, 38, 1);
@@ -77,7 +77,7 @@ const EmptyCart = styled.p`
 // `
 
 const Total = styled.p`
-    color:rgba(57, 54, 38, 1);
+    color: rgba(57, 54, 38, 1);
     font-size: 2rem;
     position: relative;
     margin-left: 40vw;
@@ -97,10 +97,10 @@ const Total = styled.p`
         font-size: 1.5rem;
         margin-left: 15vw;
     }
-`
+`;
 
 const CheckoutLink = styled(Link)`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     background: rgba(147, 141, 123, 1);
     padding: 11px 40px;
@@ -120,9 +120,9 @@ const CheckoutLink = styled(Link)`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     margin-left: 5vw;
     @media screen and (max-width: 926px) {
@@ -133,11 +133,10 @@ const CheckoutLink = styled(Link)`
         margin-left: 5vw;
         padding: 10px;
     }
-
-`
+`;
 
 const SignUpLink = styled(Link)`
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     background: rgba(147, 141, 123, 1);
     padding: 11px 40px;
@@ -158,9 +157,9 @@ const SignUpLink = styled(Link)`
     }
     &:active {
         letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     }
     @media screen and (max-width: 926px) {
         margin-left: 1vw;
@@ -172,7 +171,15 @@ const SignUpLink = styled(Link)`
         ${'' /* margin-right: 2vw; */}
         padding: 10px;
     }
-`
+`;
 
-export {CartWrapper, CartStyle, EmptyCart, Total, CheckoutLink, SignUpLink, Heading, TotalButtonWrapper}
-
+export {
+    CartWrapper,
+    CartStyle,
+    EmptyCart,
+    Total,
+    CheckoutLink,
+    SignUpLink,
+    Heading,
+    TotalButtonWrapper,
+};
