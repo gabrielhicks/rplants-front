@@ -14,7 +14,7 @@
 
 > A ReactJS / Ruby on Rails e-commerce web application
 
-### 🏠 [Homepage](http://rplants-frontend.herokuapp.com/)
+### 🏠 [Homepage](http://rplants.netlify.app/)
 
 ## Authors
 
@@ -26,7 +26,7 @@
 ## To Do
 - [x] Browser responsiveness
 - [ ] Create unit tests
-- [ ] Fix mobile responsiveness
+- [x] Fix mobile responsiveness
 - [ ] Refactor components to functional when needed
 - [ ] Implement and optimize with Redux
 - [ ] Add inventory
@@ -45,3 +45,4 @@ Copyright © 2020 [Gabriel Hicks and Jessica Salbert](https://github.com/jessica
 This project is [MIT](https://github.com/jessicasalbert/rplants-front/blob/master/LICENSE) licensed.
 
 ***
+
