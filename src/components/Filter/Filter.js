@@ -10,6 +10,7 @@ export class Filter extends Component {
     localClickHandler = () => {
         // eslint-disable-next-line
         this.setState(
+            // eslint-disable-next-line no-sequences
             (prev) => ({ clicked: !prev.clicked }, this.props.filter())
         );
     };
